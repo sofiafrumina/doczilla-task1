@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class TextFileTask {
 
     public static void main(String[] args) throws Exception {
-        String rootDir = "D:/Downloads/textFiles";// Укажите здесь путь к вашей корневой директории
+        String rootDir = "textFiles";
         List<Path> textFiles = collectTextFiles(rootDir);
         Map<Path, List<Path>> dependencies = extractDependencies(textFiles);
 
